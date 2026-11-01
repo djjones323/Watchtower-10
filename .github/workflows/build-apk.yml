@@ -36,7 +36,7 @@ jobs:
       - name: Extract WATCHTOWER
         run: |
           mkdir -p "$RUNNER_TEMP/wt"
-          unzip -q WATCHTOWER-9.2-INTERFACE-FIX.zip -d "$RUNNER_TEMP/wt"
+          unzip -q WATCHTOWER-10.0-ANOMALY-FIELD.zip -d "$RUNNER_TEMP/wt"
           test -f "$RUNNER_TEMP/wt/watchtower/settings.gradle.kts"
           test -f "$RUNNER_TEMP/wt/watchtower/app/src/main/java/com/watchtower/osint/MapHomeActivity.kt"
 
